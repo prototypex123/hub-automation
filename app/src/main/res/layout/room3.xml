@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/room3"
+    android:background="@drawable/room_bg_dark"
+    android:layout_width="80dp"
+    android:layout_toRightOf="@id/room2"
+    android:layout_toEndOf="@id/room2"
+    android:layout_alignParentBottom="true"
+    android:layout_height="90dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/bulb_3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bulb_on"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

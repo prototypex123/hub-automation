@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/colorBorder"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        layout="@layout/room1" />
+    <include
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/room1"
+        android:layout_toEndOf="@id/room1"
+        android:layout_width="220dp"
+        android:layout_height="230dp"
+        layout="@layout/room2" />
+    <include
+        layout="@layout/room3" />
+    <include
+        layout="@layout/room4" />
+    <RelativeLayout
+        android:id="@+id/room5_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/room2"
+        android:layout_alignRight="@+id/room2"
+        android:layout_toEndOf="@id/room1"
+        android:layout_toRightOf="@id/room1"
+        android:background="@color/colorRoom">
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/room5_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/room3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/room2"
+        android:layout_toRightOf="@id/room2"
+        android:background="@color/colorRoom">
+        <ImageView
+            android:id="@+id/tube_5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginStart="-3dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tubelight_vertical_on"
+            android:adjustViewBounds="true" />
+        <ImageView
+            android:id="@+id/fan_5"
+            android:clickable="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/three_blade_fan" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/room5_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/room3"
+        android:layout_below="@id/room5_2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/room4"
+        android:layout_toRightOf="@id/room4"
+        android:background="@color/colorRoom">
+    </RelativeLayout>
+
+</RelativeLayout>
